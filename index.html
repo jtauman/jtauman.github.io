@@ -2,6 +2,10 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>Activity 1: Basic HTML Bio</title>
   <style>
     body { 
@@ -13,7 +17,9 @@
         } 
         img { 
             float: left;  
-            margin: 5px; 
+            margin: 5px;
+            height: 450px;
+            width: 450px; 
         } 
         p { 
             text-align: justify; 
@@ -25,6 +31,7 @@
 <body>
   <!--title-->
   <h1>J. Todd Auman: Bio</h1>
+  <br>
   <div class ="square">
     <div>
       <img src = "images/auman.jpg" alt="auman picture">
@@ -39,31 +46,65 @@
   
   <br>
   <br>
-
-  <h2>Links </h2>
-  <ul>
-      <li> <strong>Email: </strong>  <a href = "mailto:jtauman@nc.rr.com" target = "_blank">jtauman@nc.rr.com</a> </li>
-      <li><strong>LinkedIn: </strong> <a href= "https://www.linkedin.com/in/aumanipit/" target="_blank">www.linkedin.com/in/aumanipit/</a></li>
-      <li><strong>Publications:  </strong>  <a href="https://www.ncbi.nlm.nih.gov/myncbi/james.auman.1/bibliography/public/" target="_blank">pubmed profile</a></li>
-    </ul>
+  <br>
+<div class="container"> 
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Links</h1>
+      <ul>
+          <li> <strong>Email: </strong>  <a href = "mailto:jtauman@nc.rr.com" target = "_blank">jtauman@nc.rr.com</a> </li>
+          <li><strong>LinkedIn: </strong> <a href= "https://www.linkedin.com/in/aumanipit/" target="_blank">www.linkedin.com/in/aumanipit/</a></li>
+          <li><strong>Publications:  </strong>  <a href="https://www.ncbi.nlm.nih.gov/myncbi/james.auman.1/bibliography/public/" target="_blank">pubmed profile</a></li>
+        </ul>    
+    </div>
+  </div>
+</div>
 
   
   <br>
   <hr>
-  <h1>Projects</h1>
-  <a href="https://github.com/kmcgrath88/Cancer-DataVis-Project">Cancer Incidence Visualiation</a>
-  <a href="https://github.com/kmcgrath88/States-FastFood-Project">ETL Project</a>
-  <hr>
-  <br>
-  <h1>Coding Examples</h1>
-  <a href="https://jtauman.github.io/plotly-challenge/">Plotly Example</a>
-  <a href="https://github.com/jtauman/javascript-challenge">Javascript Example</a>
-  <a href="https://github.com/jtauman/web-scraping-challenge">Web Scraping Example</a>
-  <a href="https://jtauman.github.io/Web-Design-Challenge/">Pandas Data Visualization Example</a>
-  <a href="https://github.com/jtauman/sql-challenge">SQL Example</a>
-  <br>
+  <div class="container"> 
+    <div class="row">
+      <div class="col-md-6">
+          <h1>Projects</h1>
+          <br>
+          <ul>
+            <li><a href="https://github.com/kmcgrath88/Cancer-DataVis-Project" target="_blank">Cancer Incidence Visualiation</a> </li>
+            <br>
+            <li><a href="https://github.com/kmcgrath88/States-FastFood-Project" target="_blank">ETL Project</a></li>
+          </ul>    
+      </div>
+      <div class="col-md-6">
+        <img src = "images/charts.png" alt="Cancer Data Visualization Project" style="width: 600px; height: 300px;">
+      </div>
+    </div>
 
+    <hr>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Coding Examples</h1>
+        <ul>
+          <li><a href="https://jtauman.github.io/plotly-challenge/" target="_blank">Plotly Example</a></li>
+          <li><a href="https://github.com/jtauman/javascript-challenge" target="_blank">Javascript Example</a></li>
+          <li><a href="https://github.com/jtauman/web-scraping-challenge" target="_blank">Web Scraping Example</a></li>
+          <li><a href="https://jtauman.github.io/Web-Design-Challenge/" target="_blank">Pandas Data Visualization Example</a></li>
+          <li><a href="https://github.com/jtauman/sql-challenge" target="_blank">SQL Example</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img src="images/ufo1_default.png" alt="JavaScript Visualization" style="width: 600px; height: 300px;">
+      </div>
+    </div>
+  </div>
 
+  
+  
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
